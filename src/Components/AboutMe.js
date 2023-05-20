@@ -7,9 +7,9 @@ const AboutMe = () => {
         <div className=' mt-10 md:mt-28'>
             <img src={wave} className='w-screen absolute' alt="" />
             <img src={laptop} alt="" className='absolute mt-[-50px] w-[200px] md:mt-[-200px] md:w-[336px]'/>
-            <div className="h-[400px] md:h-[300px] bg-purple-600">
+            <div className="h-[500px] md:h-[300px] bg-purple-600 mb-1">
                 <h2 className='text-[50px] font-bold text-white text-center pt-36 md:pt-6'>{AppText.About} <span className='text-black'>{AppText.Me}</span></h2>
-                <h2 className='text-white mt-10 text-center px-10
+                <h2 className='text-white mt-5 text-center px-10
                 md:px-64 lg:px-80'>{AppText.aboutMeDescripion}</h2>
             </div>
             <div className='flex flex-col mt-[-50px] md:mt-[-70px] md:flex-row justify-around items-center md:px-32'>

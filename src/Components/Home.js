@@ -24,8 +24,13 @@ const Home = () => {
                     <div className='flex justify-end items-end gap-4'>
                         {socialNetwork.map((item, index) => (
                             <div key={index} className=' transition-all ease-in-out hover:scale-110'>
-                                <a href=
-                                    {item.url}><img src={item.logo} alt="" className='w-[40px]' /></a>
+                                <a href={item.url}>
+                                    {/* <div className=' md:p-2 md:px-3'> */}
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-[30px] w-[40px] fill-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d={item.pathD} />
+                                        </svg>
+                                    {/* </div> */}
+                                </a>
                             </div>
                         ))}
                     </div>
