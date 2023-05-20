@@ -27,6 +27,15 @@ import instagram from './Instagram.png'
 import facebook from './Facebook.png'
 import linkdin from './LinkedIn.png'
 
+import github from './github.png'
+import boy from './boy.png'
+import crown from './crown.png'
+import glassesimoji from './glassesimoji.png'
+import thumbup from './thumbup.png'
+import Vector1 from './Vector1.png'
+import Vector2 from './Vector2.png'
+import wajid from './wajid.png'
+
 export {
     logo,cognizantLogo,wellsLogo,nodejs,contactusbg,phone,youtube,instagram,facebook,linkdin,
     homeImage,aflacLogo,wiuLogo,
@@ -42,6 +51,10 @@ export {
     mysql,
     react,
     wave,
-    robo
+    robo,
+    github,
+    boy,
+    crown,
+    glassesimoji,thumbup,Vector1,Vector2,wajid
 
 }

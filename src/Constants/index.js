@@ -1,8 +1,8 @@
 import {
     aflacLogo, android, angular, cognizantLogo,
-    facebook, firebase, instagram, ionic, linkdin, mysql,
+    facebook, firebase, github, instagram, ionic, linkdin, mysql,
     nodejs,
-    react, typescript, wellsLogo, wiuLogo, youtube
+    react, typescript, wellsLogo, wiuLogo
 } from "../assets"
 
 export const AppText = {
@@ -187,8 +187,8 @@ export const socialNetwork = [
     },
     {
         id: 1,
-        logo: youtube,
-        url: '#',
+        logo: github,
+        url: 'https://github.com/wajid-shaikh',
     },
     {
         id: 1,
