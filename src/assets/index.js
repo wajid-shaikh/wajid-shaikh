@@ -35,6 +35,15 @@ import thumbup from './thumbup.png'
 import Vector1 from './Vector1.png'
 import Vector2 from './Vector2.png'
 import wajid from './wajid.png'
+import htmlSvg from './html.svg'
+import cssSvg from './css.svg'
+import javascriptSvg from './javascript.svg'
+import mysqlSvg from './mysql.svg'
+import mongodbSvg from './mongodb.svg'
+import expressSvg from './express.svg'
+import reactSvg from './react.svg'
+import nodeSvg from './nodejs.svg'
+import tailwindcssSvg from './tailwindcss.svg'
 
 export {
     logo,cognizantLogo,wellsLogo,nodejs,contactusbg,phone,youtube,instagram,facebook,linkdin,
@@ -53,8 +62,7 @@ export {
     wave,
     robo,
     github,
-    boy,
-    crown,
-    glassesimoji,thumbup,Vector1,Vector2,wajid
+    boy, crown, glassesimoji, thumbup, Vector1, Vector2, wajid,
+    htmlSvg, cssSvg, javascriptSvg, mysqlSvg, mongodbSvg, expressSvg, reactSvg, nodeSvg, tailwindcssSvg
 
 }

@@ -4,6 +4,7 @@ import Companies from './Components/Companies';
 import ContactUs from './Components/ContactUs';
 import Footer from './Components/Footer';
 import Home from './Components/Home';
+import LanguagesKnown from './Components/LanguagesKnown';
 import NavBar from './Components/NavBar';
 import Portfolio from './Components/Portfolio';
 import Skills from './Components/Skills';
@@ -25,6 +26,9 @@ function App() {
 
 			{/* Skills */}
 			<Skills/>
+
+			{/* Languages Known */}
+			<LanguagesKnown/>
 
 			{/* Portfolio */}
 			<Portfolio/>

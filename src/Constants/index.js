@@ -1,8 +1,7 @@
 import {
-    aflacLogo, android, angular, cognizantLogo,
-    facebook, firebase, github, instagram, ionic, linkdin, mysql,
-    nodejs,
-    react, typescript, wellsLogo, wiuLogo
+    aflacLogo, cognizantLogo,
+    facebook, github, instagram,linkdin,
+    wellsLogo, wiuLogo, htmlSvg, cssSvg, javascriptSvg, mongodbSvg, expressSvg, reactSvg, nodeSvg, tailwindcssSvg
 } from "../assets"
 
 export const AppText = {
@@ -14,7 +13,9 @@ export const AppText = {
     IntroDesc: 'I worked as a Web Developer ( Fresher ) and Currenlty seeking for the good opportunities in React Js, Node Js & Python-Django',
     aboutMeDescripion: 'I have completed my graduation from Sandip Foundation in 2019, During the academics i have learnt various Technical Skills like C, C++ and Java, whereas pratically worked on the Web Development technologies for Front-End and Back-End are React-Js, Python-Django, Php-Laravel, Node-Js. Also i have worked with few of the Databases like Mongo-Db & Mysql ',
     Skills: 'Skills & ',
-    Experties: 'Experties',
+    Experties: 'Worked in...',
+    Technologies : 'Technologies ',
+    Known: 'Known',
     UIUXDesigner: 'UI/UX Designer',
     BackendDeveloper: 'Backend Dev',
     FrontedDeveloper: 'Frontend Dev',
@@ -32,13 +33,13 @@ export const aboutSection = [
         id: 1,
         image: 'https://img.freepik.com/free-vector/users-working-laptops-with-data-entry-big-data-services-technology-information-entry-equipment-database-update-data-management-concept-vector-isolated-illustration_335657-2149.jpg?w=2000',
         title: 'Databases Handling',
-        desc: 'Practically Worked on DataBases like Mysql & Mongo-Db'
+        desc: 'Practically Worked on DataBases like Mongo-Db & Mysql'
     },
     {
         id: 2,
         image: 'https://media.istockphoto.com/id/1304570729/vector/front-end-development-concept-vector-flat-graphic-design-illustration.jpg?s=612x612&w=0&k=20&c=0lpu0j-4FbuoA7xpGzt9apKZeI5F9KlNNe0qRYxjUYs=',
         title: 'Frontend Developer',
-        desc: 'Practically Worked on Front-End/Library like React-Js'
+        desc: 'Practically Worked on Front-End ( Framework or Library ) like React-Js'
     },
     {
         id: 3,
@@ -51,51 +52,59 @@ export const aboutSection = [
 export const skillsList = [
     {
         id: 1,
-        icon: angular
+        icon: htmlSvg,
+        skill:'HTML',
+        width:"90%",
+        profeciency:"90%"
     },
     {
         id: 1,
-        icon: react
+        icon: cssSvg,
+        skill:'CSS',
+        width:"80%",
+        profeciency:"80%"
     },
     {
         id: 1,
-        icon: typescript
+        icon: javascriptSvg,
+        skill:'Javascript',
+        width:"60%",
+        profeciency:"60%"
     },
     {
         id: 1,
-        icon: firebase
+        icon: tailwindcssSvg,
+        skill:'Tailwind Css',
+        width:"50%",
+        profeciency:"50%"
     },
     {
         id: 1,
-        icon: android
+        icon: mongodbSvg,
+        skill:'MongoDb',
+        width:"70%",
+        profeciency:"70%"
     },
     {
         id: 1,
-        icon: ionic
+        icon: expressSvg,
+        skill:'ExpressJs',
+        width:"60%",
+        profeciency:"60%"
     },
     {
         id: 1,
-        icon: mysql
+        icon: reactSvg,
+        skill:'ReactJs',
+        width:"90%",
+        profeciency:"90%"
     },
     {
         id: 1,
-        icon: react
-    },
-    {
-        id: 1,
-        icon: typescript
-    },
-    {
-        id: 1,
-        icon: firebase
-    },
-    {
-        id: 1,
-        icon: android
-    },
-    {
-        id: 1,
-        icon: nodejs
+        icon: nodeSvg,
+        skill: 'NodeJs',
+        width:"30%",
+        profeciency:"30%"
     },
 
 ]

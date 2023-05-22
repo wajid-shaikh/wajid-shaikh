@@ -39,7 +39,7 @@ const Home = () => {
             <div className='grid justify-items-center mt-6 md:mt-0'>
                 {/* <img src={Vector1} alt="" className=' absolute m-auto left-0 right-0 z-0 w-[310px] h-[420px] md:w-[400px] md:h-[400px]' />
                 <img src={Vector2} alt="" className=' absolute m-auto left-0 right-0 z-10 w-[310px] h-[420px] md:w-[400px] md:h-[430px]' /> */}
-                <div className='rounded-full bg-purple-600 hover:bg-purple-500 w-[310px]'>
+                <div className='rounded-full bg-purple-600 hover:bg-purple-500 w-[310px] '>
                     <img src={wajid} className=' z-20 w-[290px] md:w-[300px] rounded-full bg-purple-500 pt-9 hover:bg-purple-600' alt="" />
                 </div>
             </div>
