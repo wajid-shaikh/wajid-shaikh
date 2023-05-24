@@ -12,12 +12,12 @@ import Skills from './Components/Skills';
 function App() {
 	return (
 		<>
-		<div className='p-[20px]'>
+		{/* <div className='fixed top-0 w-full'> */}
 
 			{/* Nav Bar */}
 			<NavBar/>
 		
-		</div>
+		{/* </div> */}
 			{/* Intro */}
 			<Home/>
 			

@@ -6,10 +6,10 @@ const NavBar = () => {
     const [toggle, setToggle] = useState(false)
 
     return (
-        <div >
-            <div className='flex justify-between items-center '>
+        <div className='p-[20px] shadow bg-white z-40 fixed top-0 w-full'>
+            <div className='flex justify-between items-center'>
                 <div className=''>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="80pt" viewBox="0 0 274.000000 85.000000" preserveAspectRatio="xMidYMid meet">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="80pt" viewBox="0 0 274.000000 85.000000" preserveAspectRatio="xMidYMid meet" className=' cursor-pointer'>
 
                     <g transform="translate(0.000000,85.000000) scale(0.100000,-0.100000)" fill="#9333Ea" stroke="none">
                         <path d="M2 428 l3 -373 1367 -3 1368 -2 0 375 0 375 -1370 0 -1370 0 2 -372z m2708 2 l0 -350 -1340 0 -1340 0 0 350 0 350 1340 0 1340 0 0 -350z" />
@@ -29,7 +29,7 @@ const NavBar = () => {
                     <img src={wajidShaikh2} className=' h-12 w-32 fill-purple-600' alt='' />
                 </svg> */}
                 <div>
-                    toggle
+                    Dark-Light Mode
                 </div>
                 <div className='hidden md:flex'>
                     <ul className='flex flex-row'>
@@ -52,7 +52,7 @@ const NavBar = () => {
                         </svg>
                     }
                     {toggle ?
-                        <ul className='flex flex-col mt-8 bg-gray-300 p-2'>
+                        <ul className={`md:flex flex-col mt-12 md:items-center pb-12 left-0 md:z-auto z-50 w-full bg-gray-300 p-2 absolute md:static md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in-out `}>
                             <li className='p-3 transition-all ease-in-out hover:scale-110 cursor-pointer hover:text-purple-600'>Home</li>
                             <li className='p-3 transition-all ease-in-out hover:scale-110 cursor-pointer hover:text-purple-600'>ABout Me</li>
                             <li className='p-3 transition-all ease-in-out hover:scale-110 cursor-pointer hover:text-purple-600'>Skills</li>
