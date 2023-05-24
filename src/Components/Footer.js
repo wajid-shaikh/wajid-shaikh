@@ -1,16 +1,21 @@
 import React from 'react'
 import { socialNetwork } from '../Constants'
 // import { Link } from "react-router-dom";
-  
+
 
 const Footer = () => {
     return (
         <div className='bg-gray-200 mt-10 p-20 items-center flex flex-col  px-10 md:px-80'>
             <div className='flex gap-4'>
-                {socialNetwork.map((item, index)=>(
-                    <div key={index}>
-                        <a href=
-                        {item.url}><img src={item.logo} alt="" className='w-[40px]'/></a>
+                {socialNetwork.map((item, index) => (
+                    <div key={index} className=' transition-all ease-in-out hover:scale-110'>
+                        <a href={item.url}>
+                            {/* <div className=' md:p-2 md:px-3'> */}
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-[30px] w-[40px] fill-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path d={item.pathD} />
+                            </svg>
+                            {/* </div> */}
+                        </a>
                     </div>
                 ))}
             </div>

@@ -1,7 +1,8 @@
 import {
-    aflacLogo, cognizantLogo,
+    // aflacLogo, cognizantLogo,
     facebook, github, instagram,linkdin,
-    wellsLogo, wiuLogo, htmlSvg, cssSvg, javascriptSvg, mongodbSvg, expressSvg, reactSvg, nodeSvg, tailwindcssSvg
+    // wellsLogo, wiuLogo, 
+    htmlSvg, cssSvg, javascriptSvg, mongodbSvg, expressSvg, reactSvg, nodeSvg, tailwindcssSvg, phpSvg, laravelSvg, pythonSvg, djangoSvg, cSvg, cppSvg, javaSvg, mysqlSvg, wnsSvg
 } from "../assets"
 
 export const AppText = {
@@ -109,6 +110,42 @@ export const skillsList = [
 
 ]
 
+export const technologiesKnown = [
+    {
+        id: 1,
+        icon: phpSvg
+    },
+    {
+        id: 2,
+        icon: laravelSvg
+    },
+    {
+        id: 3,
+        icon: pythonSvg
+    },
+    {
+        id: 4,
+        icon: djangoSvg
+    },
+    {
+        id: 5,
+        icon: mysqlSvg
+    },
+    {
+        id: 6,
+        icon: cSvg
+    },
+    {
+        id: 7,
+        icon: cppSvg
+    },
+    {
+        id: 8,
+        icon: javaSvg
+    },
+
+]
+
 export const workDetail = [
     {
         id: 1,
@@ -172,20 +209,20 @@ export const portfolio = [
 export const CompanyImage = [
     {
         id: 1,
-        imageUrl: cognizantLogo
+        imageUrl: wnsSvg
     },
-    {
-        id: 1,
-        imageUrl: wellsLogo
-    },
-    {
-        id: 1,
-        imageUrl: aflacLogo
-    },
-    {
-        id: 1,
-        imageUrl: wiuLogo
-    }
+    // {
+    //     id: 1,
+    //     imageUrl: wellsLogo
+    // },
+    // {
+    //     id: 1,
+    //     imageUrl: aflacLogo
+    // },
+    // {
+    //     id: 1,
+    //     imageUrl: wiuLogo
+    // }
 ]
 
 export const socialNetwork = [

@@ -14,7 +14,7 @@ const AboutMe = () => {
             </div>
             <div className='flex flex-col mt-[-50px] md:mt-[-70px] md:flex-row justify-around items-center md:px-32'>
                 {aboutSection.map((item,index)=>(
-                    <div className=' group hover:bg-purple-600 mb-5 p-7 rounded-lg' key={index}>
+                    <div className=' group hover:bg-purple-600 mb-5 p-7 rounded-lg hover:scale-110 transition-all ease-in-out' key={index}>
                         <img key={item.id} src={item.image} className='w-[240px] h-[200px] object-cover rounded-lg' alt="" />
                         <div className=' w-[230px] pb-[10px] pt-[10px]'>
                             <h2  className='font-bold text-center group-hover:text-white'>{item.title}</h2>

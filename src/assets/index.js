@@ -38,12 +38,24 @@ import wajid from './wajid.png'
 import htmlSvg from './html.svg'
 import cssSvg from './css.svg'
 import javascriptSvg from './javascript.svg'
-import mysqlSvg from './mysql.svg'
 import mongodbSvg from './mongodb.svg'
 import expressSvg from './express.svg'
 import reactSvg from './react.svg'
 import nodeSvg from './nodejs.svg'
 import tailwindcssSvg from './tailwindcss.svg'
+import phpSvg from './php.svg'
+import laravelSvg from './laravel.svg'
+import pythonSvg from './python.svg'
+import djangoSvg from './django.svg'
+import cSvg from './c.svg'
+import cppSvg from './cplusplus.svg'
+import javaSvg from './java.svg'
+import mysqlSvg from './mysql.svg'
+import bootstrapSvg from './bootstrap.svg'
+import wnsSvg from './WNS.svg'
+// import wajidShaikh1 from './WS.png'
+import wajidShaikh2 from './WSN.svg'
+
 
 export {
     logo,cognizantLogo,wellsLogo,nodejs,contactusbg,phone,youtube,instagram,facebook,linkdin,
@@ -63,6 +75,6 @@ export {
     robo,
     github,
     boy, crown, glassesimoji, thumbup, Vector1, Vector2, wajid,
-    htmlSvg, cssSvg, javascriptSvg, mysqlSvg, mongodbSvg, expressSvg, reactSvg, nodeSvg, tailwindcssSvg
+    htmlSvg, cssSvg, javascriptSvg, mysqlSvg, mongodbSvg, expressSvg, reactSvg, nodeSvg, tailwindcssSvg, phpSvg, laravelSvg, pythonSvg, djangoSvg, cSvg, cppSvg, javaSvg, wnsSvg, bootstrapSvg, wajidShaikh2
 
 }
