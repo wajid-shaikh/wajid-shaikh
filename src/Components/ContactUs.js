@@ -4,7 +4,7 @@ import { contactusbg, phone } from '../assets'
 
 const ContactUs = () => {
     return (
-        <div className='flex flex-col justify-center mt-5' id='contact'>
+        <div className='flex flex-col justify-center mt-5' id='contact-me'>
             <div className='flex flex-row  justify-center '>
                 <div>
                     <h1 className='text-[40px] font-bold'>{AppText.Contact} <span className=' text-purple-600'>{AppText.Me}</span></h1>

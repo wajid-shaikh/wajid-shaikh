@@ -4,7 +4,7 @@ import { laptop, wave } from '../assets'
 
 const AboutMe = () => {
     return (
-        <div className=' mt-10 md:mt-28'>
+        <div className=' mt-10 md:mt-28' id='about-me'>
             <img src={wave} className='w-screen absolute' alt="" />
             <img src={laptop} alt="" className='absolute mt-[-50px] w-[200px] md:mt-[-200px] md:w-[336px]'/>
             <div className="h-[550px] md:h-[300px] bg-purple-600 mb-1">
