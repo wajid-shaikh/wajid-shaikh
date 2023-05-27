@@ -15,15 +15,12 @@ const NavBar = () => {
     // };
     // window.addEventListener('scroll', changeNavbarColor);
      
-    // const navigationHeight = document.querySelector('.navigationHeight').clientHeight;
-    // console.log(navigationHeight)
-
     return (
         // <div className={`p-[20px] z-40 fixed top-0 w-full ${colorChange ? 'shadow bg-white' : ''}`}>
-        <div className='p-[20px] z-40 fixed top-0 w-full shadow bg-white navigationHeight'>
+        <div className='p-[20px] z-40 fixed top-0 w-full shadow bg-white'>
             <div className='flex justify-between items-center'>
                 <div className=''>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="80pt" viewBox="0 0 274.000000 85.000000" preserveAspectRatio="xMidYMid meet" className=' cursor-pointer'>
+                <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="80pt" viewBox="0 0 274.000000 85.000000" preserveAspectRatio="xMidYMid meet" className=' cursor-pointer'>
 
                         <g transform="translate(0.000000,85.000000) scale(0.100000,-0.100000)" fill="#9333Ea" stroke="none">
                             <path d="M2 428 l3 -373 1367 -3 1368 -2 0 375 0 375 -1370 0 -1370 0 2 -372z m2708 2 l0 -350 -1340 0 -1340 0 0 350 0 350 1340 0 1340 0 0 -350z" />
@@ -37,7 +34,7 @@ const NavBar = () => {
                             <path d="M2220 430 l0 -100 30 0 c28 0 30 2 30 40 0 52 18 52 48 0 18 -33 28 -40 52 -40 l30 0 -25 49 -25 50 20 46 c11 26 20 49 20 51 0 2 -13 4 -28 4 -22 0 -31 -7 -43 -32 -8 -18 -22 -34 -31 -36 -15 -3 -18 4 -18 32 0 33 -2 36 -30 36 l-30 0 0 -100z" />
                             <path d="M2450 430 l0 -100 25 0 c23 0 25 4 25 40 0 39 1 40 35 40 34 0 35 -1 35 -40 0 -36 3 -40 25 -40 l25 0 0 100 0 100 -25 0 c-22 0 -25 -4 -25 -35 0 -33 -2 -35 -35 -35 -33 0 -35 2 -35 35 0 31 -3 35 -25 35 l-25 0 0 -100z" />
                         </g>
-                    </svg>
+                    </svg></a>
                 </div>
                 {/* <svg>
                     <img src={wajidShaikh2} className=' h-12 w-32 fill-purple-600' alt='' />
