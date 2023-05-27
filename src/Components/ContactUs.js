@@ -13,7 +13,7 @@ const ContactUs = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 justify-evenly px-10 md:px-44'>
                 <img src={contactusbg} alt="" className='w-[300px] mr-10' data-aos="fade-up"/>
-                <div className='w-full bg-purple-600 p-2 md:p-5 rounded'>
+                <div className='w-full bg-purple-600 p-2 md:p-5 rounded' data-aos="fade-up">
                     <div className='flex flex-col ' data-aos="fade-up">
                         <label htmlFor="" className='text-white '>Email</label>
                         <input type="text" className='border-[1.5px] px-2 border-purple-300  hover:border-purple-500 rounded-md' placeholder='Enter Your Email address' />
