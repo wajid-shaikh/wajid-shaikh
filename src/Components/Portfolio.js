@@ -5,8 +5,8 @@ import { robo } from '../assets'
 const Portfolio = () => {
     return (
         <div className=' mt-28 flex justify-center flex-col' id='portfolio'>
-            <div className='flex flex-row px-6 md:px-0 items-center justify-center'>
-                <div data-aos="fade-up">
+            <div className='flex flex-row px-6 md:px-0 items-center justify-center' data-aos="fade-up">
+                <div>
                     <h1 className='text-[30px] md:text-[40px] font-bold md:text-center'>{AppText.Creative} <span className=' text-purple-600'>{AppText.Portfolio}</span></h1>
                 </div>
                 <img src={robo} alt="" className='w-[40px] ml-5 animate-bounce' />
