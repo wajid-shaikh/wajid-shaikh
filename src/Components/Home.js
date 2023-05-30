@@ -3,7 +3,7 @@ import { AppText, socialNetwork } from '../Constants'
 import { wajid } from '../assets'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
-const Home = () => {
+const Home = (props) => {
     const [text] = useTypewriter({
         words:['Wajid Shaikh', 'Front-End Dev.', 'Back-End Dev.'],
         loop: {},
@@ -13,14 +13,14 @@ const Home = () => {
         <div className='grid grid-cols-1 md:grid-cols-3 md: pt-2 items-center mt-20 z-30' id='home' data-aos="fade-up">
             {/* <div className='mt-7 px-6 md:px-20 items-center flex flex-col md:flex-row'> */}
             <div className='p-7 md:p-10 col-span-2'>
-                <h1 className='text-[35px] font-bold md:text-[70px]' data-aos="fade-up">{AppText.hello}</h1>
-                <h1 className='text-[35px] font-bold md:text-[70px]'data-aos="fade-up">{AppText.Iam}
+                <h1 className={`${props.mode} text-[35px] font-bold md:text-[70px]`}>{AppText.hello}</h1>
+                <h1 className={`${props.mode} text-[35px] font-bold md:text-[70px]`}>{AppText.Iam}
                     {/* <span className='text-purple-600 md:text-[70px]'>{AppText.WajidShaikh}</span></h1> */}
                     <span className='text-purple-600 md:text-[70px]'>{text}</span><span className='text-purple-600 md:text-[20px]'><Cursor cursorStyle=""/></span></h1>
                 <h1 className='text-gray-400 mt-4' data-aos="fade-up">{AppText.IntroDesc}</h1>
                 <div className='flex gap-4 justify-between'>
                     <button className='bg-purple-600 mt-4 p-2 px-3 transition-all ease-in-out hover:scale-105 text-white
-                rounded-xl cursor-pointer shadow-2xl z-30' data-aos="fade-up">Download CV</button>
+                rounded-xl cursor-pointer shadow-2xl z-30'>Download CV</button>
                     <div className='flex justify-end items-end gap-4' data-aos="fade-up">
                         {socialNetwork.map((item, index) => (
                             <div key={index} className=' transition-all ease-in-out hover:scale-110'>

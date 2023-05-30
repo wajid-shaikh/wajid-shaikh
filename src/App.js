@@ -8,18 +8,32 @@ import LanguagesKnown from './Components/LanguagesKnown';
 import NavBar from './Components/NavBar';
 import Portfolio from './Components/Portfolio';
 import Skills from './Components/Skills';
+import { useState, useEffect } from 'react';
+
 
 function App() {
+	const getTheme = ()=>{
+		return JSON.parse(localStorage.getItem('theme')) || false
+	}
+	
+	const [darkMode, setDarkMode] = useState(getTheme());
+	
+	useEffect(()=>{
+		localStorage.setItem('theme', JSON.stringify(darkMode))
+	},[darkMode])
+
 	return (
 		<>
+		<div className={`${darkMode? 'bg-black' : ''}`}>
 		{/* <div className='fixed top-0 w-full'> */}
 
 			{/* Nav Bar */}
-			<NavBar/>
+
+			<NavBar check={darkMode} change={()=>setDarkMode(!darkMode)}/>
 		
 		{/* </div> */}
 			{/* Intro */}
-			<Home/>
+			<Home mode = {`${darkMode ? 'text-gray-400' : 'text-dark'}`}/>
 			
 			{/* About Me */}
 			<AboutMe/>
@@ -42,6 +56,7 @@ function App() {
 			{/* Footer */}
 			<Footer/>
 		{/* </div> */}
+		</div>
 		</>
 	);
 }
