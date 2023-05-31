@@ -2,16 +2,16 @@ import React from 'react'
 import { AppText } from '../Constants'
 import { contactusbg, phone } from '../assets'
 
-const ContactUs = () => {
+const ContactUs = (props) => {
     return (
         <div className='flex flex-col justify-center mt-10' id='contact-me'>
             <div className='flex flex-row  justify-center ' data-aos="fade-up">
                 <div >
-                    <h1 className='text-[40px] font-bold'>{AppText.Contact} <span className=' text-purple-600'>{AppText.Me}</span></h1>
+                    <h1 className={`text-[40px] font-bold ${props.mode?'text-gray-400':''}`}>{AppText.Contact} <span className=' text-purple-600'>{AppText.Me}</span></h1>
                 </div>
-                <img src={phone} alt="" className='w-[80px] ml-4' />
+                <img src={phone} alt="" className='w-[80px] h-14 ml-4' />
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 justify-evenly px-10 md:px-44'>
+            <div className='grid grid-cols-1 md:grid-cols-2 justify-evenly px-10 md:px-44 mt-12'>
                 <img src={contactusbg} alt="" className='w-[300px] mr-10' data-aos="fade-up"/>
                 <div className='w-full bg-purple-600 p-2 md:p-5 rounded' data-aos="fade-up">
                     <div className='flex flex-col ' data-aos="fade-up">

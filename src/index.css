@@ -15,6 +15,10 @@ html{
 	scroll-padding-top: var(--scroll-padding, 100px);
 }
 
+#invert_effect{
+	filter: invert(100%);
+}
+
 body {
 	margin: 0;
 }

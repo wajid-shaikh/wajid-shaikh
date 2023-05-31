@@ -1,13 +1,13 @@
 import React from 'react'
-import { AppText, socialNetwork } from '../Constants'
-import { wajid } from '../assets'
+import { AppText, socialNetwork,  } from '../Constants'
+import { resume, wajid } from '../assets'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 const Home = (props) => {
     const [text] = useTypewriter({
-        words:['Wajid Shaikh', 'Front-End Dev.', 'Back-End Dev.'],
+        words: ['Wajid Shaikh', 'Front-End Dev.', 'Back-End Dev.'],
         loop: {},
-        typeSpeed:120,
+        typeSpeed: 120,
     });
     return (
         <div className='grid grid-cols-1 md:grid-cols-3 md: pt-2 items-center mt-20 z-30' id='home' data-aos="fade-up">
@@ -16,19 +16,20 @@ const Home = (props) => {
                 <h1 className={`${props.mode} text-[35px] font-bold md:text-[70px]`}>{AppText.hello}</h1>
                 <h1 className={`${props.mode} text-[35px] font-bold md:text-[70px]`}>{AppText.Iam}
                     {/* <span className='text-purple-600 md:text-[70px]'>{AppText.WajidShaikh}</span></h1> */}
-                    <span className='text-purple-600 md:text-[70px]'>{text}</span><span className='text-purple-600 md:text-[20px]'><Cursor cursorStyle=""/></span></h1>
+                    <span className='text-purple-600 md:text-[70px]'>{text}</span><span className='text-purple-600 md:text-[20px]'><Cursor cursorStyle="" /></span></h1>
                 <h1 className='text-gray-400 mt-4' data-aos="fade-up">{AppText.IntroDesc}</h1>
                 <div className='flex gap-4 justify-between'>
-                    <button className='bg-purple-600 mt-4 p-2 px-3 transition-all ease-in-out hover:scale-105 text-white
-                rounded-xl cursor-pointer shadow-2xl z-30'>Download CV</button>
+                    <a href={resume} download="Resume" className='z-30'>
+                        <button className='bg-purple-600 mt-4 p-2 px-3 transition-all ease-in-out hover:scale-105 text-white rounded-xl cursor-pointer shadow-2xl '>Download CV</button>
+                    </a>
                     <div className='flex justify-end items-end gap-4' data-aos="fade-up">
                         {socialNetwork.map((item, index) => (
                             <div key={index} className=' transition-all ease-in-out hover:scale-110'>
                                 <a href={item.url}>
                                     {/* <div className=' md:p-2 md:px-3'> */}
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-[30px] w-[40px] fill-purple-600" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d={item.pathD} />
-                                        </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-[30px] w-[40px] fill-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d={item.pathD} />
+                                    </svg>
                                     {/* </div> */}
                                 </a>
                             </div>

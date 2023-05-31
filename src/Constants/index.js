@@ -22,7 +22,7 @@ export const AppText = {
     FrontedDeveloper: 'Frontend Dev',
     Portfolio: 'Portfolio',
     Creative: 'My Creative ',
-    CompaniesI: 'Companies I ',
+    CompaniesI: 'Company I ',
     WorkedFor: 'Worked For',
     Contact: 'Contact ',
     copywriteText: 'Copyright by Rahul Sanap @2023'

@@ -3,12 +3,12 @@
     // import { AppText, technologiesKnown, workDetail } from '../Constants'
     // import { skill } from '../assets'
 
-const LanguagesKnown = () => {
+const LanguagesKnown = (props) => {
     return (
         <div className='mt-[90px]' id='skills'>
             <div className='flex flex-row justify-center items-center' data-aos="fade-up">
                 {/* <img src={skill} alt="" className=' w-[40px] md:w-[40px] animate-bounce' /> */}
-                <h1 className=' text-[30px] md:text-[40px] font-bold md:text-center'>{AppText.Technologies} <span className=' text-purple-600'>{AppText.Known}</span></h1>
+                <h1 className={`text-[30px] md:text-[40px] font-bold md:text-center ${props.mode?'text-gray-400':''}`}>{AppText.Technologies} <span className=' text-purple-600'>{AppText.Known}</span></h1>
             </div>
             <div className='flex flex-col md:flex-row justify-evenly px-8 md:px-0 mt-8'>
                 <div className='grid  grid-cols-3 md:grid-cols-4 gap-8 md:gap-x-20 items-center justify-items-center'>

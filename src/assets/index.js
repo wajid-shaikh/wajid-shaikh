@@ -21,7 +21,7 @@ import wellsLogo from './wells.png'
 import aflacLogo from './aflac.png'
 import wiuLogo from './wiu.png'
 import contactusbg from './contactusbg.png'
-import phone from './phone.png'
+import phone from './phone.svg'
 import youtube from './youtube.png'
 import instagram from './Instagram.png'
 import facebook from './Facebook.png'
@@ -55,7 +55,7 @@ import bootstrapSvg from './bootstrap.svg'
 import wnsSvg from './WNS.svg'
 // import wajidShaikh1 from './WS.png'
 import wajidShaikh2 from './WSN.svg'
-
+import resume from './Resume.pdf'
 
 export {
     logo,cognizantLogo,wellsLogo,nodejs,contactusbg,phone,youtube,instagram,facebook,linkdin,
@@ -75,6 +75,6 @@ export {
     robo,
     github,
     boy, crown, glassesimoji, thumbup, Vector1, Vector2, wajid,
-    htmlSvg, cssSvg, javascriptSvg, mysqlSvg, mongodbSvg, expressSvg, reactSvg, nodeSvg, tailwindcssSvg, phpSvg, laravelSvg, pythonSvg, djangoSvg, cSvg, cppSvg, javaSvg, wnsSvg, bootstrapSvg, wajidShaikh2
+    htmlSvg, cssSvg, javascriptSvg, mysqlSvg, mongodbSvg, expressSvg, reactSvg, nodeSvg, tailwindcssSvg, phpSvg, laravelSvg, pythonSvg, djangoSvg, cSvg, cppSvg, javaSvg, wnsSvg, bootstrapSvg, wajidShaikh2, resume
 
 }

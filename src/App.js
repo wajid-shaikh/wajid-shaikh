@@ -36,25 +36,25 @@ function App() {
 			<Home mode = {`${darkMode ? 'text-gray-400' : 'text-dark'}`}/>
 			
 			{/* About Me */}
-			<AboutMe/>
+			<AboutMe mode = {darkMode} />
 
 			{/* Skills */}
-			<Skills/>
+			<Skills mode = {darkMode}/>
 
 			{/* Languages Known */}
-			<LanguagesKnown/>
+			<LanguagesKnown mode = {darkMode}/>
 
 			{/* Portfolio */}
-			<Portfolio/>
+			<Portfolio mode = {darkMode}/>
 
 			{/* Companies */}
-			<Companies/>
+			<Companies mode = {darkMode}/>
 
 			{/* Contact Us */}
-			<ContactUs/>
+			<ContactUs mode = {darkMode}/>
 
 			{/* Footer */}
-			<Footer/>
+			<Footer mode = {darkMode}/>
 		{/* </div> */}
 		</div>
 		</>
