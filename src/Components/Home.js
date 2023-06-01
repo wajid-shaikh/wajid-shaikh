@@ -10,7 +10,7 @@ const Home = (props) => {
         typeSpeed: 120,
     });
     return (
-        <div className='grid grid-cols-1 md:grid-cols-3 md: pt-2 items-center mt-20 z-30' id='home' data-aos="fade-up">
+        <div className='grid grid-cols-1 md:grid-cols-3 md: pt-1 items-center mt-[73px] z-30' id='home' data-aos="fade-up">
             {/* <div className='mt-7 px-6 md:px-20 items-center flex flex-col md:flex-row'> */}
             <div className='p-7 md:p-10 col-span-2'>
                 <h1 className={`${props.mode} text-[35px] font-bold md:text-[70px]`}>{AppText.hello}</h1>

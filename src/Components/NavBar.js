@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 // import { logo, wajidShaikh1 } from '../assets'
 // import { wajidShaikh2 } from '../assets'
 
@@ -19,9 +19,19 @@ const NavBar = ({check, change}) => {
         fillColor = "#FFFFFF";
      }
 
+     const inputRef = useRef(null);
+   useEffect(() => {
+      const height = inputRef.current.offsetHeight;
+      console.log('Input height', height);   
+      const navigationHeight = document.getElementsByClassName(".navHeight").height;
+      document.documentElement.style.setProperty('--scroll-padding-top', navigationHeight - 10 + "px")
+   }, [inputRef]);
+
+
     return (
         // <div className={`p-[20px] z-40 fixed top-0 w-full ${colorChange ? 'shadow bg-white' : ''}`}>
-        <div className={`p-[20px] z-40 fixed top-0 w-full shadow ${check ? ' bg-purple-700':'bg-white'}`}>
+        <div className={`p-[20px] z-40 fixed top-0 w-full shadow ${check ? ' bg-purple-700':'bg-white'} navHeight`} 
+        ref={inputRef}>
             <div className='flex justify-between items-center'>
                 <div className=''>
                 <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="80pt" viewBox="0 0 274.000000 85.000000" preserveAspectRatio="xMidYMid meet" className=' cursor-pointer'>
