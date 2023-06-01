@@ -56,6 +56,9 @@ import wnsSvg from './WNS.svg'
 // import wajidShaikh1 from './WS.png'
 import wajidShaikh2 from './WSN.svg'
 import resume from './Resume.pdf'
+import textutils from './textutils.png'
+import newsapp from './news.png'
+import inotebook from './inotebook.png'
 
 export {
     logo,cognizantLogo,wellsLogo,nodejs,contactusbg,phone,youtube,instagram,facebook,linkdin,
@@ -75,6 +78,6 @@ export {
     robo,
     github,
     boy, crown, glassesimoji, thumbup, Vector1, Vector2, wajid,
-    htmlSvg, cssSvg, javascriptSvg, mysqlSvg, mongodbSvg, expressSvg, reactSvg, nodeSvg, tailwindcssSvg, phpSvg, laravelSvg, pythonSvg, djangoSvg, cSvg, cppSvg, javaSvg, wnsSvg, bootstrapSvg, wajidShaikh2, resume
+    htmlSvg, cssSvg, javascriptSvg, mysqlSvg, mongodbSvg, expressSvg, reactSvg, nodeSvg, tailwindcssSvg, phpSvg, laravelSvg, pythonSvg, djangoSvg, cSvg, cppSvg, javaSvg, wnsSvg, bootstrapSvg, wajidShaikh2, resume, textutils, newsapp, inotebook
 
 }
