@@ -12,51 +12,48 @@ import { useState, useEffect } from 'react';
 
 
 function App() {
-	const getTheme = ()=>{
+	const getTheme = () => {
 		return JSON.parse(localStorage.getItem('theme')) || false
 	}
-	
+
 	const [darkMode, setDarkMode] = useState(getTheme());
-	
-	useEffect(()=>{
+
+	useEffect(() => {
 		localStorage.setItem('theme', JSON.stringify(darkMode))
-	},[darkMode])
+	}, [darkMode])
 
 	return (
 		<>
-		<div className={`${darkMode? 'bg-black' : ''}`}>
-		{/* <div className='fixed top-0 w-full'> */}
+			<div className={`${darkMode ? 'bg-black' : ''}`}>
 
-			{/* Nav Bar */}
+				{/* Nav Bar */}
+				<NavBar check={darkMode} change={() => setDarkMode(!darkMode)} />
 
-			<NavBar check={darkMode} change={()=>setDarkMode(!darkMode)}/>
-		
-		{/* </div> */}
-			{/* Intro */}
-			<Home mode = {`${darkMode ? 'text-gray-400' : 'text-dark'}`}/>
-			
-			{/* About Me */}
-			<AboutMe mode = {darkMode} />
+				{/* Intro */}
+				<Home mode={`${darkMode ? 'text-gray-400' : 'text-dark'}`} />
 
-			{/* Skills */}
-			<Skills mode = {darkMode}/>
+				{/* About Me */}
+				<AboutMe mode={darkMode} />
 
-			{/* Languages Known */}
-			<LanguagesKnown mode = {darkMode}/>
+				{/* Skills */}
+				<Skills mode={darkMode} />
 
-			{/* Portfolio */}
-			<Portfolio mode = {darkMode}/>
+				{/* Languages Known */}
+				<LanguagesKnown mode={darkMode} />
 
-			{/* Companies */}
-			<Companies mode = {darkMode}/>
+				{/* Portfolio */}
+				<Portfolio mode={darkMode} />
 
-			{/* Contact Us */}
-			<ContactUs mode = {darkMode}/>
+				{/* Companies */}
+				<Companies mode={darkMode} />
 
-			{/* Footer */}
-			<Footer mode = {darkMode}/>
-		{/* </div> */}
-		</div>
+				{/* Contact Us */}
+				<ContactUs mode={darkMode} />
+
+				{/* Footer */}
+				<Footer mode={darkMode} />
+				
+			</div>
 		</>
 	);
 }

@@ -53,7 +53,6 @@ import javaSvg from './java.svg'
 import mysqlSvg from './mysql.svg'
 import bootstrapSvg from './bootstrap.svg'
 import wnsSvg from './WNS.svg'
-// import wajidShaikh1 from './WS.png'
 import wajidShaikh2 from './WSN.svg'
 import resume from './Resume.pdf'
 import textutils from './textutils.png'
@@ -61,8 +60,8 @@ import newsapp from './news.png'
 import inotebook from './inotebook.png'
 
 export {
-    logo,cognizantLogo,wellsLogo,nodejs,contactusbg,phone,youtube,instagram,facebook,linkdin,
-    homeImage,aflacLogo,wiuLogo,
+    logo, cognizantLogo, wellsLogo, nodejs, contactusbg, phone, youtube, instagram, facebook, linkdin,
+    homeImage, aflacLogo, wiuLogo,
     book,
     laptop,
     skill,

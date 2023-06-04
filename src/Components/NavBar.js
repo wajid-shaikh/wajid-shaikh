@@ -1,40 +1,27 @@
 import React, { useState, useRef, useEffect } from 'react'
-// import { logo, wajidShaikh1 } from '../assets'
-// import { wajidShaikh2 } from '../assets'
 
-const NavBar = ({check, change}) => {
+const NavBar = ({ check, change }) => {
     const [toggle, setToggle] = useState(false)
-    // const [colorChange, setColorchange] = useState(false);
-    // const changeNavbarColor = () => {
-    //     if (window.scrollY >= 1) {
-    //         setColorchange(true);
-    //     }
-    //     else {
-    //         setColorchange(false);
-    //     }
-    // };
-    // window.addEventListener('scroll', changeNavbarColor);
-     let fillColor = "#9333Ea";
-     if(check){
+    let fillColor = "#9333Ea";
+    if (check) {
         fillColor = "#FFFFFF";
-     }
+    }
 
-     const inputRef = useRef(null);
-   useEffect(() => {
-      const height = inputRef.current.offsetHeight;
-      console.log('Input height', height);   
-      const navigationHeight = document.getElementsByClassName(".navHeight").height;
-      document.documentElement.style.setProperty('--scroll-padding-top', navigationHeight - 10 + "px")
-   }, [inputRef]);
+    const inputRef = useRef(null);
+    useEffect(() => {
+        const height = inputRef.current.offsetHeight;
+        console.log('Input height', height);
+        const navigationHeight = document.getElementsByClassName(".navHeight").height;
+        document.documentElement.style.setProperty('--scroll-padding-top', navigationHeight - 10 + "px")
+    }, [inputRef]);
 
 
     return (
-        // <div className={`p-[20px] z-40 fixed top-0 w-full ${colorChange ? 'shadow bg-white' : ''}`}>
-        <div className={`p-[20px] z-40 fixed top-0 w-full shadow ${check ? ' bg-purple-700':'bg-white'} navHeight`} 
-        ref={inputRef}>
+        <div className={`p-[20px] z-40 fixed top-0 w-full shadow ${check ? ' bg-purple-700' : 'bg-white'} navHeight`}
+            ref={inputRef}>
             <div className='flex justify-between items-center'>
                 <div className=''>
-                <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="80pt" viewBox="0 0 274.000000 85.000000" preserveAspectRatio="xMidYMid meet" className=' cursor-pointer'>
+                    <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="80pt" viewBox="0 0 274.000000 85.000000" preserveAspectRatio="xMidYMid meet" className=' cursor-pointer'>
 
                         <g transform="translate(0.000000,85.000000) scale(0.100000,-0.100000)" fill={fillColor} stroke="none">
                             <path d="M2 428 l3 -373 1367 -3 1368 -2 0 375 0 375 -1370 0 -1370 0 2 -372z m2708 2 l0 -350 -1340 0 -1340 0 0 350 0 350 1340 0 1340 0 0 -350z" />
@@ -50,20 +37,17 @@ const NavBar = ({check, change}) => {
                         </g>
                     </svg></a>
                 </div>
-                {/* <svg>
-                    <img src={wajidShaikh2} className=' h-12 w-32 fill-purple-600' alt='' />
-                </svg> */}
-                <div className={`${check ? ' text-white':'text-black'}`}>
-                    Dark-Light Mode <input type="checkbox" name="" id="" onChange={change} checked={check}/>
+                <div className={`${check ? ' text-white' : 'text-black'}`}>
+                    Dark-Light Mode <input type="checkbox" name="" id="" onChange={change} checked={check} />
                 </div>
                 <div className='hidden md:flex'>
                     <ul className='flex flex-row'>
-                        <a href="#home"><li className={`${check ? ' text-white hover:text-black':'text-black hover:text-purple-600'} mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer `}>Home</li></a>
-                        <a href="#about-me"><li className={`${check ? ' text-white hover:text-black':'text-black hover:text-purple-600'} mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer `}>ABout Me</li></a>
-                        <a href="#skills"><li className={`${check ? ' text-white hover:text-black':'text-black hover:text-purple-600'} mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer `}>Skills</li></a>
-                        <a href="#portfolio"><li className={`${check ? ' text-white hover:text-black':'text-black hover:text-purple-600'} mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer `}>Portfolio</li></a>
-                        <a href="#companies"><li className={`${check ? ' text-white hover:text-black':'text-black hover:text-purple-600'} mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer `}>Companies</li></a>
-                        <a href="#contact-me"><li className={`${check ? ' text-white hover:text-black':'text-black hover:text-purple-600'} mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer `}>Contact Me</li></a>
+                        <a href="#home"><li className={`${check ? ' text-white hover:text-black' : 'text-black hover:text-purple-600'} mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer `}>Home</li></a>
+                        <a href="#about-me"><li className={`${check ? ' text-white hover:text-black' : 'text-black hover:text-purple-600'} mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer `}>ABout Me</li></a>
+                        <a href="#skills"><li className={`${check ? ' text-white hover:text-black' : 'text-black hover:text-purple-600'} mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer `}>Skills</li></a>
+                        <a href="#portfolio"><li className={`${check ? ' text-white hover:text-black' : 'text-black hover:text-purple-600'} mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer `}>Portfolio</li></a>
+                        <a href="#companies"><li className={`${check ? ' text-white hover:text-black' : 'text-black hover:text-purple-600'} mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer `}>Companies</li></a>
+                        <a href="#contact-me"><li className={`${check ? ' text-white hover:text-black' : 'text-black hover:text-purple-600'} mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer `}>Contact Me</li></a>
                     </ul>
                 </div>
                 <div className='md:hidden lg:hidden'>
@@ -77,13 +61,13 @@ const NavBar = ({check, change}) => {
                         </svg>
                     }
                     {toggle ?
-                        <ul className={`md:flex flex-col mt-12 md:items-center pb-12 left-0 md:z-auto z-50 w-full p-2 absolute md:static md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in-out ${check ? ' bg-purple-500':'bg-gray-300'}`}>
-                            <a href="#home"><li className={`${check?'text-white hover:text-black': 'text-black hover:text-purple-600'} p-3 transition-all ease-in-out hover:scale-110 cursor-pointer`}>Home</li></a>
-                            <a href="#about-me"><li className={`${check?'text-white hover:text-black': 'text-black hover:text-purple-600'} p-3 transition-all ease-in-out hover:scale-110 cursor-pointer`}>ABout Me</li></a>
-                            <a href="#skills"><li className={`${check?'text-white hover:text-black': 'text-black hover:text-purple-600'} p-3 transition-all ease-in-out hover:scale-110 cursor-pointer`}>Skills</li></a>
-                            <a href="#portfolio"><li className={`${check?'text-white hover:text-black': 'text-black hover:text-purple-600'} p-3 transition-all ease-in-out hover:scale-110 cursor-pointer`}>Portfolio</li></a>
-                            <a href="#companies"><li className={`${check?'text-white hover:text-black': 'text-black hover:text-purple-600'} p-3 transition-all ease-in-out hover:scale-110 cursor-pointer`}>Companies</li></a>
-                            <a href="#contact-me"><li className={`${check?'text-white hover:text-black': 'text-black hover:text-purple-600'} p-3 transition-all ease-in-out hover:scale-110 cursor-pointer`}>Contact Me</li></a>
+                        <ul className={`md:flex flex-col mt-12 md:items-center pb-12 left-0 md:z-auto z-50 w-full p-2 absolute md:static md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in-out ${check ? ' bg-purple-500' : 'bg-gray-300'}`}>
+                            <a href="#home"><li className={`${check ? 'text-white hover:text-black' : 'text-black hover:text-purple-600'} p-3 transition-all ease-in-out hover:scale-110 cursor-pointer`}>Home</li></a>
+                            <a href="#about-me"><li className={`${check ? 'text-white hover:text-black' : 'text-black hover:text-purple-600'} p-3 transition-all ease-in-out hover:scale-110 cursor-pointer`}>ABout Me</li></a>
+                            <a href="#skills"><li className={`${check ? 'text-white hover:text-black' : 'text-black hover:text-purple-600'} p-3 transition-all ease-in-out hover:scale-110 cursor-pointer`}>Skills</li></a>
+                            <a href="#portfolio"><li className={`${check ? 'text-white hover:text-black' : 'text-black hover:text-purple-600'} p-3 transition-all ease-in-out hover:scale-110 cursor-pointer`}>Portfolio</li></a>
+                            <a href="#companies"><li className={`${check ? 'text-white hover:text-black' : 'text-black hover:text-purple-600'} p-3 transition-all ease-in-out hover:scale-110 cursor-pointer`}>Companies</li></a>
+                            <a href="#contact-me"><li className={`${check ? 'text-white hover:text-black' : 'text-black hover:text-purple-600'} p-3 transition-all ease-in-out hover:scale-110 cursor-pointer`}>Contact Me</li></a>
                         </ul>
                         :
                         null

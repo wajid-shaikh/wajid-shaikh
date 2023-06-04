@@ -1,7 +1,5 @@
 import {
-    // aflacLogo, cognizantLogo,
     facebook, github, instagram,linkdin,
-    // wellsLogo, wiuLogo, 
     htmlSvg, cssSvg, javascriptSvg, mongodbSvg, expressSvg, reactSvg, nodeSvg, tailwindcssSvg, phpSvg, laravelSvg, pythonSvg, djangoSvg, cSvg, cppSvg, javaSvg, mysqlSvg, wnsSvg, textutils, inotebook, newsapp
 } from "../assets"
 
@@ -204,18 +202,6 @@ export const CompanyImage = [
         id: 1,
         imageUrl: wnsSvg
     },
-    // {
-    //     id: 1,
-    //     imageUrl: wellsLogo
-    // },
-    // {
-    //     id: 1,
-    //     imageUrl: aflacLogo
-    // },
-    // {
-    //     id: 1,
-    //     imageUrl: wiuLogo
-    // }
 ]
 
 export const socialNetwork = [
