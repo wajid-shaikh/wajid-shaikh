@@ -3,25 +3,12 @@ import { AppText, socialNetwork, } from '../Constants'
 import { resume, wajid } from '../assets'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
-const zipFile = "http://localhost:3000/extension.zip";
-
 const Home = (props) => {
     const [text] = useTypewriter({
         words: ['Wajid Shaikh', 'Front-End Dev.', 'Back-End Dev.'],
         loop: {},
         typeSpeed: 120,
     });
-
-    const downloadFIle = (url)=>{
-        const fileName = url.split("/").pop();
-        const aTag = document.createElement("a");
-        aTag.href = url;
-        aTag.setAttribute("dowload", fileName);
-        document.body.appendChild(aTag);
-        aTag.click();
-        aTag.remove();
-    }
-
     return (
         <div className='grid grid-cols-1 md:grid-cols-3 md: pt-1 items-center mt-[73px] z-30' id='home' data-aos="fade-up">
             <div className='p-7 md:p-10 col-span-2'>
@@ -33,7 +20,6 @@ const Home = (props) => {
                     <a href={resume} download="Resume" className='z-30'>
                         <button className='bg-purple-600 mt-4 p-2 px-3 transition-all ease-in-out hover:scale-105 text-white rounded-xl cursor-pointer shadow-2xl '>Download CV</button>
                     </a>
-                    <button onClick={()=>{downloadFIle(zipFile)}}>chrome Extention</button>
                     <div className='flex justify-end items-end gap-4' data-aos="fade-up">
                         {socialNetwork.map((item, index) => (
                             <div key={index} className=' transition-all ease-in-out hover:scale-110'>
